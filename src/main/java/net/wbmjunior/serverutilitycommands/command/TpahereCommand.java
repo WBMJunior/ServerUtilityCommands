@@ -23,10 +23,11 @@ public class TpahereCommand {
         ServerPlayerEntity target = EntityArgumentType.getPlayer(context, "player");
         assert requester != null && target != null;
 
-//        if (requester.equals(target)) {
-//            context.getSource().sendFeedback(() -> Text.translatable("command.tpa.self_error"), false);
-//            return -1;
-//        }
+        if (requester.equals(target)) {
+            context.getSource().sendFeedback(() -> Text.translatable("command.tpa.self_error"), false);
+            return -1;
+        }
+
         if (TpaManager.getRequest(requester.getUuid()) != null) {
             context.getSource().sendFeedback(() -> Text.translatable("command.tpa.existing_request"), false);
             return -1;

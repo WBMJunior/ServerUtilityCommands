@@ -25,6 +25,13 @@ public class TpacancelCommand {
             return -1;
         }
 
+        ServerPlayerEntity target = context.getSource().getServer().getPlayerManager().getPlayer(request.target);
+        assert target != null;
+
+        TpaManager.removeRequest(requester.getUuid());
+        requester.sendMessage(Text.translatable("command.tpa.canceled"));
+        target.sendMessage(Text.translatable("command.tpa.canceled_target", requester.getName()));
+
         return 1;
     }
 

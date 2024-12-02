@@ -1,7 +1,7 @@
 {
-  "command.sethome.success": "Set home at (%s, %s, %s)",
-  "command.home.success": "You have successfully returned to home",
-  "command.home.failure": "You have not set a home position yet",
+  "command.sethome.success": "§aSet home at (§f%s§a, §f%s§a, §f%s§a)",
+  "command.home.success": "§aYou have successfully returned to home",
+  "command.home.failure": "§cYou have not set a home position yet",
 
   "command.tpa.self_error": "§cYou cannot teleport to yourself",
   "command.tpa.existing_request": "§cYou already have an exiting teleport request",
@@ -10,7 +10,7 @@
   "command.tpa.expired": "§cTeleport request to §f%s§c has expired",
   "command.tpa.accepted": "§f%s§a accepted your teleport request",
   "command.tpa.canceled": "§cYou have canceled your outgoing teleport request",
-  "command.tpa.canceled_target": "§f%s§c has canceled their teleport request to you",
+  "command.tpa.canceled_target": "§f%s§c has canceled their outgoing teleport request to you",
   "command.tpa.expired_target": "§cTeleport request from §6%s§c has expired",
   "command.tpahere.request": "§f%s§a has requested for YOU to teleport to THEM. Type /tpaccept §f%s§a to accept",
   "command.tpaccept.no_request": "§cThere is no teleport request from §f%s",
