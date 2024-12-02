@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "serverutilitycommands",
+	"version": "${version}",
+	"name": "Server Utility Commands",
+	"description": "A mod adding useful commands for players in your server!",
+	"authors": [
+		"WBMJunior"
+	],
+	"contact": {
+		"homepage": "https://wbmjunior.com/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/serverutilitycommands/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.wbmjunior.serverutilitycommands.ServerUtilityCommands"
+		],
+		"client": [
+			"net.wbmjunior.serverutilitycommands.ServerUtilityCommandsClient"
+		],
+		"fabric-datagen": [
+			"net.wbmjunior.serverutilitycommands.ServerUtilityCommandsDataGenerator"
+		]
+	},
+	"mixins": [
+		"serverutilitycommands.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
