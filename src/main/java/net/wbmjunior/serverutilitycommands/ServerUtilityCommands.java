@@ -2,6 +2,7 @@ package net.wbmjunior.serverutilitycommands;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.wbmjunior.serverutilitycommands.events.TpaManager;
 import net.wbmjunior.serverutilitycommands.util.ModCommandRegister;
 import net.wbmjunior.serverutilitycommands.util.ModEventsRegister;
 import org.slf4j.Logger;
@@ -15,5 +16,6 @@ public class ServerUtilityCommands implements ModInitializer {
 	public void onInitialize() {
 		ModCommandRegister.registerCommands();
 		ModEventsRegister.registerEvents();
+		TpaManager.registerTickHandler();
 	}
 }

@@ -11,11 +11,11 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.wbmjunior.serverutilitycommands.events.TpaManager;
 
-public class TpaCommand {
+public class TpahereCommand {
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess commandRegistryAccess, CommandManager.RegistrationEnvironment registrationEnvironment) {
-        dispatcher.register(CommandManager.literal("tpa")
+        dispatcher.register(CommandManager.literal("tpahere")
                 .then(CommandManager.argument("player", EntityArgumentType.player())
-                        .executes(TpaCommand::run)));
+                        .executes(TpahereCommand::run)));
     }
 
     public static int run(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
@@ -32,8 +32,8 @@ public class TpaCommand {
             return -1;
         }
 
-        TpaManager.addRequest(requester, target, false);
-        target.sendMessage(Text.translatable("command.tpa.request", requester.getName(), requester.getName()));
+        TpaManager.addRequest(requester, target, true);
+        target.sendMessage(Text.translatable("command.tpahere.request", requester.getName(), requester.getName()));
         requester.sendMessage(Text.translatable("command.tpa.sent", target.getName()));
 
         return 1;

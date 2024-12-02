@@ -3,13 +3,16 @@
   "command.home.success": "You have successfully returned to home",
   "command.home.failure": "You have not set a home position yet",
 
-  "command.tpa.self_error": "You cannot teleport to yourself",
-  "command.tpa.existing_request": "You already have an exiting tpa request",
-  "command.tpa.request": "%s has requested to teleport to you. Type /tpaccept %s to accept",
-  "command.tpa.sent": "Teleport request sent to %s",
-  "command.tpa.expired": "Teleport request to %s has expired",
-  "command.tpa.accepted": "%s accepted your teleport request",
-  "command.tpa.expired_target": "Teleport request from %s has expired",
-  "command.tpaccept.no_request": "There is no teleport request from %s",
-  "command.tpaccept.accepted": "Teleport request from %s accepted"
+  "command.tpa.self_error": "§cYou cannot teleport to yourself",
+  "command.tpa.existing_request": "§cYou already have an exiting teleport request",
+  "command.tpa.request": "§f%s§a has requested to teleport to you. Type /tpaccept §f%s§a to accept",
+  "command.tpa.sent": "§aTeleport request sent to §f%s",
+  "command.tpa.expired": "§cTeleport request to §f%s§c has expired",
+  "command.tpa.accepted": "§f%s§a accepted your teleport request",
+  "command.tpa.canceled": "§cYou have canceled your outgoing teleport request",
+  "command.tpa.canceled_target": "§f%s§c has canceled their teleport request to you",
+  "command.tpa.expired_target": "§cTeleport request from §6%s§c has expired",
+  "command.tpahere.request": "§f%s§a has requested for YOU to teleport to THEM. Type /tpaccept §f%s§a to accept",
+  "command.tpaccept.no_request": "§cThere is no teleport request from §f%s",
+  "command.tpaccept.accepted": "§aTeleport request from §6%s§a accepted"
 }
